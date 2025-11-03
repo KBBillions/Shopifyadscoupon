@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdVantage Coupon Hub - Discounted Ad Credits</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4F46E5',
+                        secondary: '#10B981'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-r from-primary to-purple-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Get Discounted Ad Coupons Today!</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-10">Maximize your advertising budget with our exclusive limited-time offers. Save up to 50% on premium ad credits.</p>
+            <a href="#coupons" class="bg-white text-primary font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 inline-block">View Coupons</a>
+        </div>
+    </section>
+
+    <!-- Coupon Grid Section -->
+    <section id="coupons" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Exclusive Ad Coupons</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Coupon 1 -->
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 shadow-md hover:shadow-lg transition duration-300 border border-gray-100">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-primary rounded-full mx-auto mb-6 flex items-center justify-center">
+                            <i data-feather="tag" class="text-white w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">$400 Ads Coupon</h3>
+                        <p class="text-gray-500 mb-4">Originally $400</p>
+                        <div class="text-4xl font-bold text-primary mb-6">$150</div>
+                        <button class="w-full bg-primary hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Coupon 2 -->
+                <div class="bg-gradient-to-br from-green-50 to-teal-50 rounded-xl p-6 shadow-md hover:shadow-lg transition duration-300 border border-gray-100">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-secondary rounded-full mx-auto mb-6 flex items-center justify-center">
+                            <i data-feather="shopping-cart" class="text-white w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">$700 Ads Coupon</h3>
+                        <p class="text-gray-500 mb-4">Originally $700</p>
+                        <div class="text-4xl font-bold text-secondary mb-6">$500</div>
+                        <button class="w-full bg-secondary hover:bg-emerald-600 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Coupon 3 -->
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 shadow-md hover:shadow-lg transition duration-300 border border-gray-100">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-purple-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+                            <i data-feather="dollar-sign" class="text-white w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">$2000 Ads Coupon</h3>
+                        <p class="text-gray-500 mb-4">Originally $2000</p>
+                        <div class="text-4xl font-bold text-purple-500 mb-6">$1000</div>
+                        <button class="w-full bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Coupon 4 -->
+                <div class="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl p-6 shadow-md hover:shadow-lg transition duration-300 border border-gray-100">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-orange-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+                            <i data-feather="award" class="text-white w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">$3000 Ads Coupon</h3>
+                        <p class="text-gray-500 mb-4">Originally $3000</p>
+                        <div class="text-4xl font-bold text-orange-500 mb-6">$1500</div>
+                        <button class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Customer Reviews & Testimonials</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <img src="http://static.photos/people/640x360/1" alt="Happy Customer" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                            <i data-feather="thumbs-up" class="text-white w-5 h-5"></i>
+                        </div>
+                        <h3 class="ml-3 font-bold text-gray-800">Happy Customer</h3>
+                    </div>
+                    <p class="text-gray-600">"Saved me hundreds on my ad campaigns. The coupon worked perfectly and customer support was excellent!"</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <img src="http://static.photos/office/640x360/2" alt="Real Buyer Feedback" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-secondary rounded-full flex items-center justify-center">
+                            <i data-feather="check-circle" class="text-white w-5 h-5"></i>
+                        </div>
+                        <h3 class="ml-3 font-bold text-gray-800">Real Buyer Feedback</h3>
+                    </div>
+                    <p class="text-gray-600">"Legit coupons that actually work. I've purchased multiple times and always get exactly what I pay for."</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <img src="http://static.photos/technology/640x360/3" alt="Trusted Clients Worldwide" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center">
+                            <i data-feather="globe" class="text-white w-5 h-5"></i>
+                        </div>
+                        <h3 class="ml-3 font-bold text-gray-800">Trusted Clients Worldwide</h3>
+                    </div>
+                    <p class="text-gray-600">"As an international marketer, these coupons have helped scale my business across multiple regions."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script>
+        feather.replace();
+    </script>
+    <script src="script.js"></script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>
